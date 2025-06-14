@@ -1,0 +1,46 @@
+📘 Project Name: Course Explorer
+
+🎯 Objective:
+To build a dynamic Course Explorer app that demonstrates React performance techniques and API integration. Students will learn how to fetch and filter data, optimize renders with memoization, implement lazy loading, use context for state sharing, and explore advanced patterns like HOCs and Render Props.
+
+🧠 Concepts Covered (Unit 8):
+▫ React.memo, useMemo
+▫ React.lazy and Suspense
+▫ Fetch API for data loading
+▫ Loading and Error Handling
+▫ useContext for global state
+▫ Higher-Order Components (HOCs)
+▫ Render Props Pattern
+
+🛠️ Features to Implement:
+▫ A top heading showing “Course Explorer”.
+▫ A filter dropdown to select category (e.g., Web, AI, Data Science).
+▫ Cards that show course title, category, and description.
+▫ Cards are loaded lazily for performance.
+▫ Data is fetched from a simulated API (`courses.json`).
+▫ Cards are wrapped in an HOC for hover effects.
+▫ A reusable Render Props component is used to render filtered cards.
+▫ useMemo optimizes re-renders of the filtered list.
+
+📂 Component Structure:
+src/
+│
+├── App.jsx                        # Root component, wraps provider and layout
+├── main.jsx                       # Vite entry point
+├── context/
+│   └── CourseContext.jsx         # useContext setup for global category state
+├── components/
+│   ├── CourseList.jsx            # Displays filtered courses
+│   ├── CourseCard.jsx            # Displays individual course details
+│   ├── Filter.jsx                # Dropdown to select course category
+│   ├── RenderList.jsx           # Render Props component for reusable rendering
+│   └── withHoverEffect.jsx      # Higher-Order Component adding hover styling
+└── public/
+    └── courses.json             # Sample API response with course data
+├── styles/                   # CSS styles directory
+│      ├── CourseList.css        # Styles for the course list component
+│      ├── Filter.css           # Styles for the filter component
+│      └── global.css           # Global styles and CSS reset
+
+Output Link  
+🔗 (Please host your project and paste the deployed link here)
