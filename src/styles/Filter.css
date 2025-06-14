@@ -1,0 +1,74 @@
+/* === CONTAINER WRAPPING THE ENTIRE FILTER PANEL === */
+.filter-container {
+  background: #ffffff;                 /* Crisp white background */
+  border-radius: 12px;                /* Softly rounded corners */
+  padding: 1.5rem;                    /* Internal spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft elevation effect */
+  margin-bottom: 2rem;               /* Space below the filter section */
+}
+
+/* === LABEL ABOVE THE DROPDOWN === */
+.filter-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;                      /* Space between icon and text */
+  margin-bottom: 1rem;
+  color: #1a202c;                    /* Neutral dark text */
+  font-weight: 500;
+}
+
+/* === STYLING FOR THE FILTER ICON (SVG) === */
+.filter-label svg {
+  color: #3b82f6;                    /* Brings it in line with your theme's blue */
+}
+
+/* === WRAPPER TO POSITION DROPDOWN + ICON TOGETHER === */
+.filter-select-wrapper {
+  position: relative;               /* Needed for absolutely positioning the icon */
+  width: 100%;
+  max-width: 300px;
+}
+
+/* === ACTUAL SELECT DROPDOWN === */
+.filter-select {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem; /* Right padding makes room for the icon */
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #f8fafc;        /* Slightly off-white */
+  color: #1a202c;
+  font-size: 0.875rem;
+  appearance: none;                 /* Removes default arrow for consistent styling */
+  cursor: pointer;
+  transition: all 0.2s ease;        /* Smooth border/background on hover/focus */
+}
+
+/* === STYLING THE DROPDOWN ARROW ICON === */
+.filter-select-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);      /* Perfect vertical centering */
+  pointer-events: none;             /* Allows clicks to pass through to the select */
+  color: #64748b;                   /* Muted gray for subtlety */
+}
+
+/* === HOVER STATE FOR DROPDOWN === */
+.filter-select:hover {
+  border-color: #cbd5e1;
+  background-color: #ffffff;
+}
+
+/* === FOCUS STATE FOR ACCESSIBILITY === */
+.filter-select:focus {
+  outline: none;
+  border-color: #3b82f6;            /* Bright blue border */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); /* Soft focus ring */
+}
+
+/* === INDIVIDUAL OPTIONS INSIDE THE DROPDOWN === */
+.filter-select option {
+  padding: 0.5rem;
+  background-color: #ffffff;
+  color: #1a202c;
+}

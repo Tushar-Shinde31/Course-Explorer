@@ -1,0 +1,43 @@
+/* === MAIN CONTAINER FOR THE COURSE LIST === */
+.course-list {
+  margin-top: 2rem; /* Adds vertical space above the course list section */
+}
+
+/* === STYLES FOR BOTH LOADING AND ERROR STATES === */
+.course-list-loading,
+.course-list-error {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9fafb; /* Soft gray background for neutral state */
+  border-radius: 8px;         /* Slight rounding for a friendly look */
+  color: #6b7280;             /* Medium gray text */
+}
+
+/* === OVERRIDE FOR ERROR STATE (more alerting colors) === */
+.course-list-error {
+  color: #ef4444;             /* Bold red text to signal an error */
+  background-color: #fef2f2;  /* Light red background for contrast */
+}
+
+/* === GRID LAYOUT FOR DISPLAYING COURSE CARDS === */
+.course-grid {
+  display: grid;              /* Enables CSS Grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* Creates as many columns as fit, each at least 300px wide */
+  gap: 2rem;                  /* Spacing between grid items */
+  margin-top: 2rem;           /* Space above the grid */
+}
+
+/* === RESPONSIVE ADJUSTMENTS FOR TABLETS AND BELOW === */
+@media (max-width: 768px) {
+  .course-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Slightly narrower cards to fit smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .course-grid {
+    grid-template-columns: 1fr; /* Stacks course cards in a single column */
+  }
+}

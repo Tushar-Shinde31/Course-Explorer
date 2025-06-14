@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "React for Beginners",
+    "category": "Web",
+    "description": "A beginner-friendly React course."
+  },
+  {
+    "id": 2,
+    "title": "Machine Learning Basics",
+    "category": "AI",
+    "description": "Intro to ML concepts and tools."
+  },
+  {
+    "id": 3,
+    "title": "Data Science with Python",
+    "category": "Data Science",
+    "description": "Explore data science techniques using Python."
+  },
+  {
+    "id": 4,
+    "title": "Advanced React Patterns",
+    "category": "Web",
+    "description": "HOCs, render props, and compound components."
+  },
+  {
+    "id": 5,
+    "title": "Full Stack Development",
+    "category": "Web",
+    "description": "Master both frontend and backend development."
+  },
+  {
+    "id": 6,
+    "title": "Deep Learning Fundamentals",
+    "category": "AI",
+    "description": "Learn neural networks and deep learning architectures."
+  },
+  {
+    "id": 7,
+    "title": "Big Data Analytics",
+    "category": "Data Science",
+    "description": "Process and analyze large-scale datasets."
+  },
+  {
+    "id": 8,
+    "title": "Mobile App Development",
+    "category": "Mobile",
+    "description": "Build cross-platform mobile applications."
+  },
+  {
+    "id": 9,
+    "title": "Cloud Computing",
+    "category": "DevOps",
+    "description": "Master cloud platforms and services."
+  },
+  {
+    "id": 10,
+    "title": "Cybersecurity Essentials",
+    "category": "Security",
+    "description": "Learn fundamental security concepts and practices."
+  },
+  {
+    "id": 11,
+    "title": "UI/UX Design Principles",
+    "category": "Web",
+    "description": "Master the fundamentals of user interface and experience design."
+  },
+  {
+    "id": 12,
+    "title": "Natural Language Processing",
+    "category": "AI",
+    "description": "Build and deploy NLP models for text analysis and generation."
+  }
+]

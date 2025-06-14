@@ -1,0 +1,85 @@
+/* === COURSE CARD CONTAINER === */
+.course-card {
+  background: #ffffff;                          /* Clean white background */
+  border-radius: 12px;                          /* Soft, rounded corners */
+  padding: 1.5rem;                              /* Inner spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);      /* Subtle elevation */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover transitions */
+  border: 1px solid #e2e8f0;                    /* Light border for subtle separation */
+  display: flex;
+  flex-direction: column;                       /* Stack children vertically */
+  gap: 1rem;                                     /* Spacing between children */
+}
+
+/* Hover animation: lift the card slightly and deepen shadow */
+.course-card:hover {
+  transform: translateY(-4px);                  /* Visually lifts the card */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);   /* Stronger shadow for depth */
+}
+
+/* === HEADER SECTION WITH ICON + TITLE === */
+.course-header {
+  display: flex;
+  align-items: center;                          /* Align icon and text vertically */
+  gap: 0.75rem;
+}
+
+/* Icon color to match primary theme */
+.course-icon {
+  color: #3b82f6;
+}
+
+/* Course title styling */
+.course-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a202c;                               /* Deep gray for strong contrast */
+  margin: 0;
+}
+
+/* === CATEGORY DISPLAY UNDER HEADER === */
+.course-category {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a5568;                               /* Subtle gray tone */
+  font-size: 0.875rem;                          /* Slightly smaller text */
+  font-weight: 500;
+}
+
+/* === COURSE DESCRIPTION TEXT === */
+.course-description {
+  color: #4a5568;                               /* Consistent muted gray */
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* === CTA BUTTON: LEARN MORE === */
+.course-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;                                  /* Space between text and arrow */
+  padding: 0.75rem 1rem;
+  background-color: #3b82f6;                   /* Bright blue button */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;      /* Smooth hover effect */
+  margin-top: auto;                            /* Pushes button to the bottom of the card */
+}
+
+/* Button hover effect: slightly darker blue */
+.course-button:hover {
+  background-color: #2563eb;
+}
+
+/* SVG arrow inside the button transitions on hover */
+.course-button svg {
+  transition: transform 0.2s ease;
+}
+.course-button:hover svg {
+  transform: translateX(2px);                  /* Subtle motion to the right */
+}
